@@ -1,0 +1,47 @@
+програма створює папку і в ній десять папок. 
+І в кожній з цих папок, ще по десять папок.
+*****
+string path = "D:\";
+string folderName = "folder";
+string str = "line";
+string fulName;
+
+CreateDir(path, folderName);
+
+int i = 0;
+int d = 0;
+string s;
+while (i < 10)
+{
+	CreateDir(path + folderName + "\", folderName + i);
+	s = path + folderName + "\" + folderName + i;
+	d = 0;
+	while (d < 10)
+	{
+		CreateDir(s + "\", folderName + d);
+		d = d + 1;
+	}
+	i = i + 1;
+}
+*****
+*****
+Наступна програма створює папку і текстовий файл в ній. 
+Після чого в циклі додає у файл значення. І виводить вміст файлу на консоль.
+*****
+string path = "D:\";
+string folderName = "papka";
+string fileName = "file.txt";
+string str = "line";
+string fulName;
+
+CreateDir(path, folderName);
+CreateTxtFile(path + folderName + "\", fileName);
+fulName = path + folderName + "\" + fileName;
+int i = 0;
+while (i < 100)
+{
+	AppendToFile(fulName ,str + " " + i);
+	i = i + 1;
+}
+
+ReadAndLog(fulName);
