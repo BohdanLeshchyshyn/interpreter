@@ -1,5 +1,5 @@
-програма створює папку і в ній десять папок. 
-І в кожній з цих папок, ще по десять папок.
+the program creates a folder and has ten folders in it.
+And in each of these folders, another ten folders.
 *****
 string path = "D:\";
 string folderName = "folder";
@@ -25,8 +25,8 @@ while (i < 10)
 }
 *****
 *****
-Наступна програма створює папку і текстовий файл в ній. 
-Після чого в циклі додає у файл значення. І виводить вміст файлу на консоль.
+the program creates a folder and a text file in it.
+After that, in a loop adds the value to the file. And outputs the contents of the file to the console.
 *****
 string path = "D:\";
 string folderName = "papka";
